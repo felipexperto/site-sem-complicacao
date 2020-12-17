@@ -60,7 +60,7 @@ const cardList = styled.section`
   justify-content: space-around;
 
   & > a,
-  & > div {
+  & > span {
     align-items: stretch;
     border-radius: 16px;
     box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
@@ -100,7 +100,7 @@ const cardList = styled.section`
     }
   }
 
-  & > div {
+  & > span {
     align-items: center;
     background-color: ${ theme.main.colors.darkyellow };
     color: ${ theme.main.colors.black };
