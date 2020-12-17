@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import SocialList from "src/components/UI/socialList";
+// import SocialList from "src/components/UI/SocialList";
 import * as S from './styles';
 
 const Footer = () => (
@@ -13,7 +13,11 @@ const Footer = () => (
           <S.presentationSubtitle>Respondo assim que puder.</S.presentationSubtitle>
         </S.presentationColumn>
         <S.infosColumn>
-          <S.infosLabel>Para mandar um "Oi" 👋</S.infosLabel>
+          <S.infosLabel>
+            Para mandar um "Oi"
+            {` `}
+            <span aria-label="Emoji de mão acenando" role="img">👋</span>
+            </S.infosLabel>
           <S.infosEmail>felipexperto@gmail.com</S.infosEmail>
         </S.infosColumn>
       </S.firstRow>
@@ -21,7 +25,9 @@ const Footer = () => (
         <S.copyrightColumn>
           © {new Date().getFullYear()}, Construído com
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> <S.emojiWrapper aria-label="Emoji de coração" role="img">❤</S.emojiWrapper>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {` `}
+          <S.emojiWrapper aria-label="Emoji de coração" role="img">❤</S.emojiWrapper>
         </S.copyrightColumn>
         <S.socialColumn>
           {/* <SocialList networkArr={socialArr} /> */}

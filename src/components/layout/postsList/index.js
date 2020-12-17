@@ -9,7 +9,7 @@ import { theme } from 'styles';
 import * as S from './styles';
 
 const CardListPlaceholder = () => (
-  <span aria-label="Estude, Recrie e Compartilhe" role="image">
+  <span aria-label="Estude, Recrie e Compartilhe" role="img">
     <CardListPlaceholderImage data-cardlistplaceholderimage />
   </span>
 );

@@ -10,8 +10,8 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import * as S from './styles';
-import Avatar from 'src/components/UI/avatar';
-import AuthorInfo from 'src/components/layout/authorInfo';
+import Avatar from 'src/components/UI/Avatar';
+import AuthorInfo from 'src/components/layout/AuthorInfo';
 import avatarFelipe from 'src/images/authors/felipemarciano.png';
 import avatarDaniele from 'src/images/authors/danielegama.jpg';
 

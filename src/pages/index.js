@@ -1,10 +1,10 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby";
 
-import App from "src/components/layout/app";
-import PostsList from "src/components/layout/postsList";
-import { Title } from "src/components/UI/title";
-import SEO from "src/components/layout/seo";
+import App from "src/components/layout/App";
+import PostsList from "src/components/layout/PostsList";
+import { Title } from "src/components/UI/Title";
+import SEO from "src/components/layout/Seo";
 
 class BlogIndex extends React.Component {
   render() {

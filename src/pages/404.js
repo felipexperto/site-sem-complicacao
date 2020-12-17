@@ -1,8 +1,8 @@
 import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 
-import App from "src/components/layout/app"
-import SEO from "src/components/layout/seo"
+import App from "src/components/layout/App"
+import SEO from "src/components/layout/Seo"
 
 class NotFoundPage extends React.Component {
   render() {

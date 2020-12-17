@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from 'src/components/layout/header';
-import Banner from 'src/components/layout/banner';
-import Footer from 'src/components/layout/footer';
+import Header from 'src/components/layout/Header';
+import Banner from 'src/components/layout/Banner';
+import Footer from 'src/components/layout/Footer';
 import { Container, ContainerFull } from 'styles';
 import { isHome } from 'src/utils/helpers';
 

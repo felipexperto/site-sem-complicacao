@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import PostStyles from 'src/styles/PostStyles';
-import Bio from "src/components/layout/bio";
+import Bio from "src/components/layout/Bio";
 import * as S from './styles';
 
 const PostContent = ({
