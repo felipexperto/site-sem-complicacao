@@ -10,7 +10,7 @@
 
 - Tema dark;
 
-- Novo Footer;
+- Custom 404 page;
 
 
 **Backlog Técnico**

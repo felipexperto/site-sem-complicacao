@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import SocialList from "src/components/socialList";
+// import SocialList from "src/components/UI/socialList";
 import * as S from './styles';
 
 const Footer = () => (
