@@ -15,6 +15,12 @@
 
 **Backlog Técnico**
 
+- ThemeProvider
+ ```
+import { ThemeProvider } from 'styled-components';
+ <ThemeProvider theme={theme}>{children}</ThemeProvider>
+ ```
+
 - Eslint;
 
 - Troca de fontes e cores por variáveis de tema;

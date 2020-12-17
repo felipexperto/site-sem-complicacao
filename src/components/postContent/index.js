@@ -42,9 +42,14 @@ const PostContent = ({
           </S.dates>
           {(tldr) && (
             <S.tldrWrapper>
-              <S.tldrTitle>
-                Não li, nem lerei
-              </S.tldrTitle>
+              <S.tldrHeader>
+                <S.tldrTitle>
+                  Não li, nem lerei
+                </S.tldrTitle>
+                <S.tldrSubtitle>
+                  Um breve resumo para pessoas cansadas
+                </S.tldrSubtitle>
+              </S.tldrHeader>
               <S.tldrText dangerouslySetInnerHTML={{ __html: tldr }} />
             </S.tldrWrapper>
           )}
