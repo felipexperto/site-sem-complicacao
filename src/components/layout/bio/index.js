@@ -7,64 +7,31 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 
-import * as S from './styles';
+import GetAuthorInfo from 'src/services/authors';
 import Avatar from 'src/components/UI/Avatar';
-import AuthorInfo from 'src/components/layout/AuthorInfo';
+import SocialList from "src/components/UI/SocialList";
 import avatarFelipe from 'src/images/authors/felipemarciano.png';
 import avatarDaniele from 'src/images/authors/danielegama.jpg';
+import * as S from './styles';
 
 const Bio = ({ authorId }) => {
 
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          authors {
-            id name intro bio social {
-              behance { 
-                name url boxicon show
-              }
-              dribbble { 
-                name url boxicon show
-              }
-              github { 
-                name url boxicon show
-              }
-              instagram { 
-                name url boxicon show
-              }
-              linkedin { 
-                name url boxicon show
-              }
-              pinterest { 
-                name url boxicon show
-              }
-              twitter { 
-                name url boxicon show
-              }
-              custom { 
-                name url boxicon boxicon_type show
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const postAuthorInfo = data.site.siteMetadata.authors.filter(item => item.id === authorId);
-  const { name } = postAuthorInfo[0];
+  const { authorBio, authorName, authorIntro, authorSocial } = GetAuthorInfo(authorId);
   const authorAvatar = authorId === 1 ? avatarFelipe : avatarDaniele;
   
   return (
     <S.BioWrapper>
       <Avatar
         image={authorAvatar}
-        label={name}
+        label={authorName}
       />
-      <AuthorInfo props={postAuthorInfo[0]} />
+      <div>
+        { (authorIntro) && <S.Intro>{ authorIntro }</S.Intro> }
+        { (authorName) && <S.Name>{ authorName }</S.Name> }
+        { (authorBio) && <S.Description>{ authorBio }</S.Description> }
+        <SocialList networkArr={authorSocial} />
+      </div>
     </S.BioWrapper>
   )
 }
@@ -77,4 +44,4 @@ Bio.propTypes = {
   authorId: PropTypes.number,
 }
 
-export default Bio
+export default Bio;

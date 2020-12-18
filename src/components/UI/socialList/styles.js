@@ -8,7 +8,7 @@ const SocialAnchor = styled.a`
   transition: all .5s .15s;
 
   > i {
-    color: ${theme.main.colors.darkgrey};
+    color: ${({ colorSchemeReverse }) => colorSchemeReverse ? theme.main.colors.white : theme.main.colors.darkgrey};
     transition: all .5s .15s;
   }
 
@@ -22,7 +22,10 @@ const SocialAnchor = styled.a`
 const SocialItem = styled.li`
   font-size: 1.5rem;
   margin-right: 1rem;
-  margin-top: .5rem;
+
+  &:first-child {
+    margin-left: -.5rem;
+  }
 `;
 const SocialList = styled.ul`
   display: flex;

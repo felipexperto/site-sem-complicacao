@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 import { Container } from 'styles';
 import theme from 'src/styles/Themes';
 
@@ -84,15 +84,25 @@ const infosLabel = styled.span`
   display: block;
   font-family: 'Inter', sans-serif;
   font-size: .9rem;
-  margin: .5rem 0;
+  margin: ${({ margin }) => margin ? margin : '.5rem 0'};
 `;
 
-const infosEmail = styled.strong`
-  display: block;
+const infosHighlight = () => css`
+  color: inherit;
+  display: inline-block;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.25rem;
   font-weight: ${ theme.main.fonts.weight.bolder };
 `;
+
+const infosEmail = styled.strong`
+  ${infosHighlight}
+`;
+
+const infosLink = styled.a`
+  ${infosHighlight}
+  text-decoration: none;
+`
 
 const emojiWrapper = styled.span`
   color: ${ theme.main.colors.red };
@@ -112,4 +122,5 @@ export {
   presentationSubtitle,
   infosLabel,
   infosEmail,
+  infosLink,
 }
