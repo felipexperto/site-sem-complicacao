@@ -80,9 +80,6 @@ const PostStyles = createGlobalStyle`
       font-family: 'Ubuntu', sans-serif;
       font-weight: 700;
       line-height: 1.4em;
-    }
-
-    h2 {
       margin-top: 2em;
     }
   
