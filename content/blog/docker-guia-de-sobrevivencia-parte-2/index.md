@@ -95,6 +95,10 @@ Quando você utiliza o comando `docker run -i -t ubuntu bash`, o entrypoint é o
 Desse modo, o que realmente é executado é: `/bin/sh -c bash`.
 
 
+### O comando RUN
+
+O comando RUN cria uma camada nova no container (os container são feito de camadas read-only onde a ultima camada é read/write) então, cada RUN cria uma camada nova, por isso é bom concatenar o maximo de comando possível pro seu container ficar com menos camadas assim economizando espaço, ganhando performance.
+
 ## Referências:
 
 - [20 Funny Commands of Linux or Linux is Fun in Terminal](https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/)
