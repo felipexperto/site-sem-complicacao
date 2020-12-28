@@ -97,7 +97,7 @@ Desse modo, o que realmente é executado é: `/bin/sh -c bash`.
 
 ### O comando RUN
 
-O comando RUN cria uma camada nova no container (os container são feito de camadas read-only onde a ultima camada é read/write) então, cada RUN cria uma camada nova, por isso é bom concatenar o maximo de comando possível pro seu container ficar com menos camadas assim economizando espaço, ganhando performance.
+O comando `RUN` cria uma camada nova no container (os container são feito de camadas read-only onde a ultima camada é read/write), por isso é bom concatenar o máximo de comando possível pro seu container ficar com menos camadas assim economizando espaço, ganhando performance.
 
 ## Referências:
 
