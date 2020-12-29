@@ -103,6 +103,10 @@ O comando `RUN` cria uma camada nova no container (os container são feito de ca
 
 - [Docker and Kubernetes - Full Course for Beginners (freeCodeCamp)](https://www.youtube.com/watch?v=Wf2eSG3owoA)
 
+## Indicação de leitura
+
+- [Best Practices for Writing a Dockerfile](https://blog.bitsrc.io/best-practices-for-writing-a-dockerfile-68893706c3)
+
 ## Referências:
 
 - [20 Funny Commands of Linux or Linux is Fun in Terminal](https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/)
