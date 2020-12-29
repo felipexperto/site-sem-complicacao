@@ -106,6 +106,7 @@ O comando `RUN` cria uma camada nova no container (os container são feito de ca
 ## Indicação de leitura
 
 - [Best Practices for Writing a Dockerfile](https://blog.bitsrc.io/best-practices-for-writing-a-dockerfile-68893706c3)
+- [The Essential Docker, Dockerfile, and Docker Compose Cheat Sheet](https://medium.com/better-programming/the-essential-docker-dockerfile-and-docker-compose-cheat-sheet-8bf1c42876c1)
 
 ## Referências:
 
