@@ -44,7 +44,7 @@ Siga os passos conforme seu sistema operacional.
 
 ### Confirmando que a instalação foi um sucesso
 
-Para conferir se o Docker está instalado em sua máquina, abra o terminal de sua preferência (prompt de comando, Git CLI, Tmux, iTerm, ...) e digite: `docker -v`. A versão deve ser retornada com sucesso, por exemplo: `Docker version 19.03.13, build 4484c46d9d`.
+Para conferir se o Docker está instalado em sua máquina, abra o terminal de sua preferência (prompt de comando, Git CLI, Tmux, iTerm, ...) e digite: `docker -v`. A versão deve ser retornada com sucesso, por exemplo: `Docker version 19.03.13, build 4484c46d9d`. Para uma resposta mais detalhada utilize `docker version`.
 
 
 ### Baixando e executando a primeira imagem
@@ -64,7 +64,8 @@ Status: Downloaded newer image for hello-world:latest
 docker.io/library/hello-world:latest
 ```
 
-Se você ainda não acredita que a imagem foi realmente baixada, rode o seguinte comando: `docker images | grep hello`.  
+Se você ainda não acredita que a imagem foi realmente baixada, rode o seguinte comando: `docker images | grep hello`.
+
 Nós estamos solicitando uma lista de imagens e filtrando com o comando `grep` somente aquelas que contém a palavra `hello`.
 
 Seu feedback será parecido com esse:
@@ -111,7 +112,7 @@ Com o comando: `docker images`
 
 Você pode passar o ID (hash) com o comando: `docker rmi bf756fb1ae65`  
 Apagar múltiplas imagens soltas: `docker rmi $(docker images -f dangling=true -q)`  
-Apagar baseado em tempo, por exemplo, últimas 24h: `docker image prune –a ––filter "until=24h"`
+Apagar baseado em tempo, por exemplo, últimas 24h: `docker image prune –a ––filter "until=24h"`  
 Apagar imagens rotuladas como *old* pelo Docker: `docker image prune ––filter="label=old"`
 
 #### É possível dar um nome para o container?

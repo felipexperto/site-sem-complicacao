@@ -15,9 +15,12 @@ Seu principal objetivo é colocar serviços e aplicações dentro de containers,
 
 Seu principal propósito principal é automatizar o deploy de aplicações.
 
+<div class="fx-group">
+
 Pode ser definido como:
 
 > Ferramenta de empacotamento de uma aplicação e suas dependências em um container virtual que pode ser executado em um servidor Linux. - [Hugo](https://www.youtube.com/watch?v=hCMcQfGb4cA)
+</div>
 
 ## Por que usar o Docker? 
 
@@ -41,7 +44,7 @@ Como leitura complementar aconselho o tópico [Porque usar Docker?](https://stac
 
 ## Preciso. E agora, o que vou fazer?
 
-Se lendo os pontos acima você identificou que precisa, seja por questões projetuais ou porque sua atual empresa o utiliza na estrutura, vem comigo pro próximo post, saber [O Básico para utilizar Docker](/docker-guia-de-sobrevivencia).
+Se lendo os pontos acima você identificou que precisa, seja por questões projetuais ou porque sua atual empresa o utiliza na estrutura, vem comigo pro próximo post, saber [O Básico para utilizar Docker](/docker-guia-de-sobrevivencia-parte-1).
 
 
 ## Referências:
