@@ -99,6 +99,10 @@ Desse modo, o que realmente é executado é: `/bin/sh -c bash`.
 
 O comando `RUN` cria uma camada nova no container (os container são feito de camadas read-only onde a ultima camada é read/write), por isso é bom concatenar o máximo de comando possível pro seu container ficar com menos camadas assim economizando espaço, ganhando performance.
 
+## Indicação de curso
+
+- [Docker and Kubernetes - Full Course for Beginners (freeCodeCamp)](https://www.youtube.com/watch?v=Wf2eSG3owoA)
+
 ## Referências:
 
 - [20 Funny Commands of Linux or Linux is Fun in Terminal](https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/)
